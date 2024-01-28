@@ -1,0 +1,218 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+                <p>
+                    Земельные работы по
+                    Санкт–Петербургу
+                </p>
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <nav class="header__links">
+                    <div class="dropdown-container">
+                        <div class="arrow"></div>
+                        <a href="#" class="header__link dropdown-toggle hover-dropdown">Главная</a>
+                        <ul class="header-down__menu dropdown-menu">
+                            <li class="header-down__link">
+                                <a href="#">Продукция</a>
+                                <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-down__link">
+                                <a href="#">Оченб длинное название</a>
+                                <ul class="header-down__submenu">
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                    <li class="header__li">
+                                        <a href="#">Испытания1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                            <li>
+                                <a href="#">Продукция</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#">Цены</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Фото работ</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="header__social">
+                    <a href="tel:+7 (812) 99-555-70" class="header__phone">
+                        <svg>
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <p>+7 (812) 99-555-70</p>
+                    </a>
+                    <a href="mailto:zakaz@zemlya-grunt.ru" class="header__mail">
+                        <svg>
+                            <use xlink:href="#mail"></use>
+                        </svg>
+                        <p>zakaz@zemlya-grunt.ru</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="phone" viewBox="0 0 28 29">
+        <g>
+            <path d="M27.7006 17.078C27.5989 17.5674 27.1616 17.9039 26.674 17.9039C26.6047 17.9039 26.5334 17.8977 26.4632 17.8822C25.8959 17.7686 25.5288 17.2226 25.6463 16.6641C27.0357 9.97174 22.6377 3.41357 15.8393 2.04475C15.272 1.9312 14.905 1.38512 15.0224 0.826647C15.1378 0.267144 15.6967 -0.0962232 16.2598 0.0224905C24.1897 1.61945 29.3228 9.27081 27.7006 17.078ZM14.2244 10.4796C15.3318 10.6479 16.306 11.2311 16.9687 12.1199C17.6304 13.0098 17.901 14.0999 17.73 15.19C17.642 15.7536 18.0342 16.2811 18.6067 16.3678C18.6612 16.3761 18.7147 16.3802 18.7672 16.3802C19.2758 16.3802 19.7225 16.0158 19.8022 15.5059C20.0591 13.8707 19.6533 12.2356 18.6602 10.9008C17.6671 9.56708 16.2043 8.69272 14.5432 8.43981C13.9696 8.35413 13.4348 8.74021 13.3467 9.30281C13.2586 9.86541 13.6508 10.3929 14.2234 10.4807L14.2244 10.4796ZM15.4188 4.06908C14.8526 3.9545 14.2978 4.31477 14.1814 4.87324C14.065 5.43171 14.431 5.97676 14.9983 6.09134C19.5295 7.00389 22.4626 11.3767 21.5356 15.8372C21.4192 16.3957 21.7852 16.9407 22.3525 17.0553C22.4227 17.0698 22.4941 17.077 22.5633 17.077C23.0509 17.077 23.4882 16.7405 23.5899 16.2512C24.7486 10.6747 21.0836 5.20976 15.4188 4.06908ZM18.7934 20.242C18.3561 19.5349 17.6661 19.0384 16.8492 18.8433C16.0323 18.6482 15.1871 18.7772 14.4698 19.2066L13.1202 20.0149C12.706 20.2627 12.1817 20.2049 11.8461 19.8776C10.7754 18.8391 9.83688 17.6716 9.05564 16.4081C8.2723 15.1394 7.64941 13.7799 7.20478 12.3677C7.06741 11.9321 7.26246 11.4397 7.66723 11.196L9.01579 10.3877C10.4975 9.49998 10.9694 7.59127 10.0686 6.1316L8.43274 3.48687C7.99546 2.77975 7.30545 2.28321 6.48856 2.08811C5.67376 1.89404 4.8275 2.02204 4.10918 2.45148L2.01608 3.70571C0.731485 4.47477 -0.0403191 5.85908 0.00162681 7.31771C0.0876158 10.3588 0.795452 14.9639 3.67818 19.6278C5.27632 22.2116 8.20624 25.8484 13.0898 28.4962C13.7106 28.8328 14.3995 29 15.0906 29C15.8509 29 16.6111 28.7977 17.2833 28.3951L19.3733 27.1429C20.855 26.2551 21.3269 24.3464 20.4261 22.8878L18.7902 20.242H18.7934Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="mail" viewBox="0 0 20 16">
+        <g>
+            <path d="M5.28924 0.907491C8.42388 0.635003 11.5763 0.635003 14.7109 0.907491L16.2211 1.03877C17.2265 1.12617 18.0876 1.72584 18.5337 2.58361C18.5908 2.69335 18.548 2.82621 18.4428 2.89132L12.1769 6.77024C10.833 7.60216 9.1385 7.61962 7.77778 6.81556L1.46995 3.0882C1.36804 3.02798 1.32126 2.90402 1.36719 2.79492C1.77535 1.82536 2.69298 1.13318 3.77901 1.03877L5.28924 0.907491Z"/>
+            <path d="M1.36206 4.76676C1.20609 4.6746 1.00709 4.77377 0.988912 4.95402C0.735176 7.46965 0.796587 10.0091 1.17314 12.5132C1.37166 13.8333 2.44907 14.8454 3.77901 14.961L5.28924 15.0923C8.42388 15.3647 11.5763 15.3647 14.7109 15.0923L16.2211 14.961C17.5511 14.8454 18.6285 13.8333 18.827 12.5132C19.2145 9.93613 19.2683 7.32162 18.9882 4.73415C18.9686 4.55264 18.7662 4.45529 18.611 4.55139L12.9664 8.04564C11.1482 9.17118 8.85566 9.19479 7.01468 8.10695L1.36206 4.76676Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="vk" viewBox="0 0 24 25">
+        <g id="basil:vk-solid">
+            <path id="Vector" d="M21.504 19.2695H19.222C18.359 19.2695 18.099 18.5705 16.552 17.0225C15.2 15.7195 14.629 15.5575 14.287 15.5575C13.814 15.5575 13.685 15.6875 13.685 16.3385V18.3905C13.685 18.9455 13.505 19.2705 12.055 19.2705C10.6483 19.176 9.28416 18.7487 8.07497 18.0237C6.86578 17.2987 5.84612 16.2968 5.1 15.1005C3.32839 12.8955 2.09571 10.3076 1.5 7.54252C1.5 7.20052 1.63 6.89052 2.282 6.89052H4.562C5.148 6.89052 5.359 7.15152 5.589 7.75452C6.696 11.0125 8.585 13.8465 9.352 13.8465C9.646 13.8465 9.774 13.7165 9.774 12.9835V9.62752C9.677 8.09652 8.864 7.96752 8.864 7.41352C8.87428 7.26736 8.94114 7.13097 9.05037 7.03331C9.15961 6.93565 9.30261 6.88443 9.449 6.89052H13.033C13.523 6.89052 13.685 7.13452 13.685 7.72052V12.2505C13.685 12.7395 13.895 12.9015 14.043 12.9015C14.337 12.9015 14.563 12.7395 15.102 12.2015C16.2574 10.7925 17.2013 9.22268 17.904 7.54152C17.9759 7.33967 18.1119 7.16689 18.2912 7.04953C18.4705 6.93218 18.6832 6.87668 18.897 6.89152H21.178C21.862 6.89152 22.007 7.23352 21.862 7.72152C21.0324 9.57993 20.0058 11.344 18.8 12.9835C18.554 13.3585 18.456 13.5535 18.8 13.9935C19.026 14.3355 19.826 15.0035 20.363 15.6385C21.145 16.4185 21.794 17.3205 22.285 18.3085C22.481 18.9445 22.155 19.2695 21.504 19.2695Z"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <ul style="text-align:center;">
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="main.html">Главная</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="services.html">Услуги</a>
+                    </li>
+                    <li>
+                        <a style="text-align: center; display: block; color:#2b2a28; font-size: 20px; margin-top: 20px;" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <header class="footer__header">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/svgicons/logo-white.svg" alt="logo">
+                    <p>
+                        Земельные работы по
+                            Санкт–Петербургу
+                    </p>
+                </a>
+                <a href="mailto:zakaz@zemlya-grunt.ru" class="footer__mail">
+                    <svg>
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                    <p>zakaz@zemlya-grunt.ru</p>
+                </a>
+                <a href="tel:+7 (812) 99-555-70" class="footer__phone">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <p>+7 (812) 99-555-70</p>
+                </a>
+            </header>
+            <main class="footer__links">
+                <nav class="footer__nav">
+                    <p class="footer__title">Улсуги</p>
+                    <a href="#">Раскорчевка участка, валка спил деревьев</a>
+                    <a href="#">Выравнивание участка, разработка и планирование участка</a>
+                    <a href="#">Вывоз грунта</a>
+                </nav>
+                <nav class="footer__nav without__title">
+                    <p class="footer__title"></p>
+                    <a href="#">Разработка котлована и рытье траншей</a>
+                    <a href="#">Аренда бульдозера</a>
+                    <a href="#">Аренда гусеничного экскаватора</a>
+                </nav>
+                <nav class="footer__nav without__title">
+                    <p class="footer__title">Доставка</p>
+                    <a href="#">Доставка земли плодородной</a>
+                    <a href="#">Доставка песка</a>
+                    <a href="#">Доставка щебня</a>
+                </nav>
+                <nav class="footer__nav without__title">
+                    <p class="footer__title">Партнерам</p>
+                    <a href="#">Доставка земли плодородной</a>
+                    <a href="#">Доставка песка</a>
+                    <a href="#">Доставка щебня</a>
+                </nav>
+            </main>
+            <footer class="footer__copy">
+                <p>Copyright © 2010-2024 Freepik Company S.L. All rights reserved.</p>
+                <a href="#">
+                    <p>Разработанно</p>
+                    <img src="img/svgicons/kruw.svg" alt="kruw">
+                </a>
+            </footer>
+        </div>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-callback">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <div class="dialogbox__form">
+                <h2>Обратный звонок</h2>
+                <form action="#">
+                    <input
+                        class="input"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+                    <input
+                        class="input"
+                        type="tel"
+                        name="phone"
+                        placeholder="Ваш телефон"
+                    >
+                    <button type="submit" class="btn btn-sumbit">Написать нам</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
