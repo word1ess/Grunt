@@ -152,7 +152,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: 100000;
-  height: 145px;
+  height: 105px;
 }
 .header::before {
   content: "";
@@ -197,7 +197,7 @@ h6 {
 .header__logo {
   position: relative;
   position: relative;
-  width: 300px;
+  width: 200px;
   display: block;
   overflow: hidden;
 }
@@ -206,17 +206,8 @@ h6 {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 62px;
-  object-fit: cover;
-}
-.header__logo p {
-  color: #20371c;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px; /* 111.111% */
-  max-width: 200px;
-  margin: 0px;
+  height: 100%;
+  object-fit: fill;
 }
 .header__menu {
   display: flex;
@@ -346,6 +337,10 @@ h6 {
   transition: all 300ms ease;
   text-align: left;
   cursor: pointer;
+}
+.header-down__menu li::before,
+.header-down__submenu li::before {
+  display: none;
 }
 .header-down__menu li:hover,
 .header-down__submenu li:hover {
@@ -787,6 +782,7 @@ p.white {
   object-fit: cover;
   z-index: 1;
   filter: blur(3px);
+  transition: all 300ms ease;
 }
 .our-services__content {
   position: relative;
@@ -804,6 +800,7 @@ p.white {
   overflow: hidden;
   border-radius: 22px;
   padding: 40px;
+  transition: all 300ms ease;
 }
 .our-services__item::after {
   content: "";
@@ -830,6 +827,12 @@ p.white {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
+}
+.our-services__item:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.398), 0 0 15px #0fa;
+}
+.our-services__item:hover .our-services__bg {
+  filter: blur(0px);
 }
 
 .advantages__row {
@@ -1293,7 +1296,7 @@ body {
     aspect-ratio: 1/0.5;
   }
   .sub-intro__row {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -1314,6 +1317,7 @@ body {
   }
   .intro.main .intro__img {
     display: block;
+    right: 150px;
   }
   .seo-main__info {
     max-width: 500px;
@@ -1446,7 +1450,7 @@ body {
   }
   .header__menu {
     position: fixed;
-    top: 139px;
+    top: 100px;
     left: 0;
     opacity: 0;
     transform: translate(0, -120%);
